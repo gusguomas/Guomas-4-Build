@@ -1,0 +1,68 @@
+/* Style for Slayyyter Coachella Weekend I */
+
+/* GLOBAL STYLES (MOBILE FIRST) */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(155, 201, 213, 0.375);
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(193, 235, 253);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(217, 255, 220);
+    }
+}
+
+header {
+    background-color: rgb(253, 215, 222);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(236, 117, 190);
+    text-decoration: underline;
+    text-decoration-color: rgb(9, 108, 108);
+}
+
+nav {
+    background-color: rgb(230, 205, 253);
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 1rem;
+}
+
+.card-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: rgb(244, 162, 182);
+    padding: 1rem;
+}
+
+.card-row section {
+    flex: 1 1 260px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+}
