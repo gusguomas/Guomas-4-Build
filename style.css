@@ -10,17 +10,14 @@ body {
     padding: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         background-color: rgb(193, 235, 253);
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1300px) {
     body {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         background-color: rgb(217, 255, 220);
     }
@@ -30,6 +27,8 @@ header {
     background-color: rgb(253, 215, 222);
     padding: 1rem;
     text-align: center;
+    font-size: 2rem;
+    font-style: italic;
 }
 
 h1,
@@ -38,6 +37,10 @@ h3 {
     color: rgb(236, 117, 190);
     text-decoration: underline;
     text-decoration-color: rgb(9, 108, 108);
+}
+
+h2 {
+    text-align: center;
 }
 
 nav {
@@ -65,4 +68,20 @@ nav ul {
     flex: 1 1 260px;
     background-color: rgb(255, 255, 255);
     padding: 0.5rem;
+}
+
+.image-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 4rem;
 }
